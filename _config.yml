@@ -23,5 +23,3 @@ repository:
 launch_buttons:
   notebook_interface: "classic"
 
-# Add a bibtex file
-bibtex_bibfiles: []
