@@ -1,0 +1,10 @@
+format: jb-book
+root: intro
+
+parts:
+  - caption: Background Tools
+    chapters:
+      - file: background_tools/overview
+      - file: background_tools/git_github
+      - file: background_tools/markdown
+      - file: background_tools/text_editors

@@ -1,0 +1,27 @@
+# Book settings
+title: USC Economics AI Working Group
+author: Department of Economics, University of South Carolina
+logo: ""
+
+# Force re-execution of notebooks on each build
+execute:
+  execute_notebooks: "off"
+
+# HTML-specific settings
+html:
+  use_issues_button: true
+  use_repository_button: true
+  use_edit_page_button: false
+
+# Repository info
+repository:
+  url: https://github.com/jdebacker/AI-Working-Group
+  branch: main
+  path_to_book: ""
+
+# Launch buttons
+launch_buttons:
+  notebook_interface: "classic"
+
+# Add a bibtex file
+bibtex_bibfiles: []
