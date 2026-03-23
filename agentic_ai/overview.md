@@ -6,6 +6,8 @@ Agentic AI represents a significant step beyond conversational chatbots. Rather 
 
 ## Key Resources
 
+Video of Max Ghenis (PolicyEngine) presenting on agentic AI with applications to economic research (and grant writing) to USC PhD students in August 2025: [YouTube link](https://youtu.be/DQ40ws-ZLg8).
+
 The leading academic resource on this topic is the work of **Anton Korinek** (University of Virginia), who has written a regularly updated survey on generative AI tools for economists, published in the *Journal of Economic Literature*.
 
 - **AEA paper page:** [Generative AI for Economic Research (JEL 61:4)](https://www.aeaweb.org/content/file?id=23290) — the original 2023 article plus updates, including the August 2025 update on AI agents
