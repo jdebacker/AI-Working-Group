@@ -1,0 +1,695 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Text Editors &#8212; USC Economics AI Working Group</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=1ae7504c"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'background_tools/text_editors';</script>
+    <link rel="canonical" href="https://uofsceon.github.io/AI-Working-Group/background_tools/text_editors.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Agentic AI in Economics Research" href="../agentic_ai/overview.html" />
+    <link rel="prev" title="Markdown" href="markdown.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">USC Economics AI Working Group</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    USC Economics AI Working Group
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Background Tools</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Background Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git_github.html">Git and GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Text Editors</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Agentic AI in Economics Research</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../agentic_ai/overview.html">Agentic AI in Economics Research</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../agentic_ai/korinek_jel.html">Korinek (2025): AI Agents for Economic Research</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/UofSCEcon/AI-Working-Group" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/UofSCEcon/AI-Working-Group/issues/new?title=Issue%20on%20page%20%2Fbackground_tools/text_editors.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/background_tools/text_editors.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Text Editors</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-your-editor-matters">Why Your Editor Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vs-code-recommended-starting-point">VS Code (Recommended Starting Point)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cursor">Cursor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyterlab-and-jupyter-notebook">JupyterLab and Jupyter Notebook</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rstudio-positron">RStudio / Positron</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vim-neovim">Vim / Neovim</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#emacs">Emacs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comparison-summary">Comparison Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recommendation">Recommendation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-resources">Further Resources</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="text-editors">
+<h1>Text Editors<a class="headerlink" href="#text-editors" title="Link to this heading">#</a></h1>
+<section id="why-your-editor-matters">
+<h2>Why Your Editor Matters<a class="headerlink" href="#why-your-editor-matters" title="Link to this heading">#</a></h2>
+<p>A good text editor is the central hub of a modern research workflow. You write code, prose, and configuration files in it; you run terminals from it; and increasingly, you interact with AI assistants through it. Investing a little time in choosing and configuring an editor pays off substantially.</p>
+<p>This page covers the most relevant options for economists doing research with code and AI tools.</p>
+</section>
+<section id="vs-code-recommended-starting-point">
+<h2>VS Code (Recommended Starting Point)<a class="headerlink" href="#vs-code-recommended-starting-point" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://code.visualstudio.com/">Visual Studio Code</a> is currently the most widely used editor in research and data science contexts. It is free, open source, and developed by Microsoft.</p>
+<p><strong>Key strengths:</strong></p>
+<ul class="simple">
+<li><p>Excellent Python support (syntax highlighting, linting, autocomplete, debugging)</p></li>
+<li><p>Integrated terminal</p></li>
+<li><p>Built-in Git integration — stage, commit, and view diffs without leaving the editor</p></li>
+<li><p>Jupyter notebook support (run <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> files directly in the editor)</p></li>
+<li><p>Large extension ecosystem</p></li>
+<li><p>Native GitHub Copilot and other AI assistant integrations</p></li>
+<li><p>Available on macOS, Windows, and Linux</p></li>
+</ul>
+<p><strong>Recommended extensions for economists:</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Extension</p></th>
+<th class="head"><p>Purpose</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Python (Microsoft)</p></td>
+<td><p>Python language support, linting, debugging</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pylance</p></td>
+<td><p>Enhanced Python type checking and autocomplete</p></td>
+</tr>
+<tr class="row-even"><td><p>Jupyter</p></td>
+<td><p>Run Jupyter notebooks in VS Code</p></td>
+</tr>
+<tr class="row-odd"><td><p>GitHub Copilot</p></td>
+<td><p>AI code completion</p></td>
+</tr>
+<tr class="row-even"><td><p>GitLens</p></td>
+<td><p>Enhanced Git history visualization</p></td>
+</tr>
+<tr class="row-odd"><td><p>Markdown All in One</p></td>
+<td><p>Markdown editing and preview</p></td>
+</tr>
+<tr class="row-even"><td><p>Stata Enhanced</p></td>
+<td><p>Syntax highlighting for Stata <code class="docutils literal notranslate"><span class="pre">.do</span></code> files</p></td>
+</tr>
+<tr class="row-odd"><td><p>R (REditorSupport)</p></td>
+<td><p>R language support</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Getting started:</strong> Download from <a class="reference external" href="https://code.visualstudio.com/">code.visualstudio.com</a>, then open a folder with <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Open</span> <span class="pre">Folder</span></code>. The integrated terminal can be opened with <code class="docutils literal notranslate"><span class="pre">Ctrl+`</span></code> (or <code class="docutils literal notranslate"><span class="pre">Cmd+`</span></code> on macOS).</p>
+</section>
+<section id="cursor">
+<h2>Cursor<a class="headerlink" href="#cursor" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://cursor.com/">Cursor</a> is a fork of VS Code that has deep AI integration built in from the ground up, rather than added via extension. It looks and feels almost identical to VS Code — the same interface, the same extensions, the same keyboard shortcuts — but AI features are first-class citizens.</p>
+<p><strong>Key AI features:</strong></p>
+<ul class="simple">
+<li><p><strong>Tab completion</strong> — context-aware multi-line code suggestions</p></li>
+<li><p><strong>Cmd+K</strong> — edit a selected block of code with a natural language instruction</p></li>
+<li><p><strong>Cmd+L / Chat panel</strong> — chat with Claude or GPT-4 with full awareness of your codebase</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">&#64;</span></code> mentions</strong> — reference specific files, functions, or documentation in your chat prompt</p></li>
+<li><p><strong>Composer</strong> — make coordinated edits across multiple files at once</p></li>
+</ul>
+<p>Cursor is arguably the most productive environment for AI-assisted coding currently available. Because it is a VS Code fork, any VS Code user can switch with essentially zero learning curve.</p>
+<p><strong>Pricing:</strong> Free tier available; Pro plan (~$20/month) for heavier use.</p>
+</section>
+<section id="jupyterlab-and-jupyter-notebook">
+<h2>JupyterLab and Jupyter Notebook<a class="headerlink" href="#jupyterlab-and-jupyter-notebook" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://jupyter.org/">JupyterLab</a> is a browser-based interactive computing environment centered on Jupyter notebooks. It is the standard tool for exploratory data analysis in Python and R.</p>
+<p><strong>Key strengths:</strong></p>
+<ul class="simple">
+<li><p>Notebooks interleave code, output (including figures), and Markdown prose</p></li>
+<li><p>Ideal for exploratory analysis and communicating results</p></li>
+<li><p>Supports Python, R, Julia, and other kernels</p></li>
+<li><p>JupyterLab (the newer interface) adds a file browser, multiple panels, and a terminal</p></li>
+</ul>
+<p><strong>Limitations compared to VS Code:</strong></p>
+<ul class="simple">
+<li><p>Less suitable for editing standalone <code class="docutils literal notranslate"><span class="pre">.py</span></code> scripts</p></li>
+<li><p>No built-in Git GUI (though a Git extension exists)</p></li>
+<li><p>Not ideal for large multi-file projects</p></li>
+</ul>
+<p><strong>Best used for:</strong> exploratory data analysis, sharing results as a narrative document, teaching.</p>
+<p>JupyterLab is typically launched from the terminal:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter<span class="w"> </span>lab
+</pre></div>
+</div>
+</section>
+<section id="rstudio-positron">
+<h2>RStudio / Positron<a class="headerlink" href="#rstudio-positron" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://posit.co/products/open-source/rstudio/">RStudio</a> remains the dominant editor for R users. It has deep integration with R, R Markdown, and Quarto for document authoring.</p>
+<p><a class="reference external" href="https://positron.posit.co/">Positron</a> is Posit’s newer IDE (built on VS Code) that supports both R and Python more uniformly. It is worth watching as it matures.</p>
+<p><strong>Best used for:</strong> R-heavy workflows, Quarto documents, mixed R/Python projects.</p>
+</section>
+<section id="vim-neovim">
+<h2>Vim / Neovim<a class="headerlink" href="#vim-neovim" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://www.vim.org/">Vim</a> and its modern fork <a class="reference external" href="https://neovim.io/">Neovim</a> are terminal-based editors with a modal editing model (different modes for navigation, insertion, and commands). They have a steep learning curve but are extremely fast for experienced users and work on any remote server over SSH.</p>
+<p>AI integration is available via plugins like <a class="reference external" href="https://github.com/yetone/avante.nvim">Avante.nvim</a> or <a class="reference external" href="https://github.com/CopilotC-Nvim/CopilotChat.nvim">CopilotChat.nvim</a>.</p>
+<p><strong>Best used for:</strong> users who already know Vim, remote server work, terminal-only environments.</p>
+</section>
+<section id="emacs">
+<h2>Emacs<a class="headerlink" href="#emacs" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://www.gnu.org/software/emacs/">Emacs</a> is a decades-old, highly extensible editor with a devoted following in academia. The <a class="reference external" href="https://github.com/doomemacs/doomemacs">Doom Emacs</a> and <a class="reference external" href="https://www.spacemacs.org/">Spacemacs</a> distributions provide opinionated configurations that modernize it considerably.</p>
+<p><strong>Best used for:</strong> existing Emacs users; not recommended for newcomers.</p>
+</section>
+<section id="comparison-summary">
+<h2>Comparison Summary<a class="headerlink" href="#comparison-summary" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Editor</p></th>
+<th class="head"><p>Best For</p></th>
+<th class="head"><p>AI Integration</p></th>
+<th class="head"><p>Learning Curve</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>VS Code</p></td>
+<td><p>General use, Python, notebooks</p></td>
+<td><p>GitHub Copilot, extensions</p></td>
+<td><p>Low</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cursor</p></td>
+<td><p>AI-first coding</p></td>
+<td><p>Built-in (best-in-class)</p></td>
+<td><p>Low (VS Code fork)</p></td>
+</tr>
+<tr class="row-even"><td><p>JupyterLab</p></td>
+<td><p>Exploratory analysis, notebooks</p></td>
+<td><p>Extensions</p></td>
+<td><p>Low</p></td>
+</tr>
+<tr class="row-odd"><td><p>RStudio / Positron</p></td>
+<td><p>R, Quarto, mixed R/Python</p></td>
+<td><p>Copilot extension</p></td>
+<td><p>Low–Medium</p></td>
+</tr>
+<tr class="row-even"><td><p>Vim / Neovim</p></td>
+<td><p>Speed, remote servers</p></td>
+<td><p>Plugins</p></td>
+<td><p>High</p></td>
+</tr>
+<tr class="row-odd"><td><p>Emacs</p></td>
+<td><p>Extensibility, existing users</p></td>
+<td><p>Plugins</p></td>
+<td><p>High</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="recommendation">
+<h2>Recommendation<a class="headerlink" href="#recommendation" title="Link to this heading">#</a></h2>
+<p>For most economists getting started:</p>
+<ol class="arabic simple">
+<li><p><strong>Install VS Code</strong> as your primary editor for scripts and multi-file projects</p></li>
+<li><p><strong>Try Cursor</strong> once you are comfortable — the AI features are genuinely useful and the transition is seamless</p></li>
+<li><p><strong>Use JupyterLab</strong> for exploratory data analysis and sharing notebooks</p></li>
+</ol>
+</section>
+<section id="further-resources">
+<h2>Further Resources<a class="headerlink" href="#further-resources" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://code.visualstudio.com/docs">VS Code Documentation</a></p></li>
+<li><p><a class="reference external" href="https://cursor.com/docs">Cursor Documentation</a></p></li>
+<li><p><a class="reference external" href="https://jupyterlab.readthedocs.io/">JupyterLab Documentation</a></p></li>
+<li><p><a class="reference external" href="https://code.visualstudio.com/docs/python/python-tutorial">VS Code Python Tutorial</a></p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./background_tools"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="markdown.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Markdown</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../agentic_ai/overview.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Agentic AI in Economics Research</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-your-editor-matters">Why Your Editor Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vs-code-recommended-starting-point">VS Code (Recommended Starting Point)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cursor">Cursor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyterlab-and-jupyter-notebook">JupyterLab and Jupyter Notebook</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rstudio-positron">RStudio / Positron</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vim-neovim">Vim / Neovim</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#emacs">Emacs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comparison-summary">Comparison Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recommendation">Recommendation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-resources">Further Resources</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Department of Economics, University of South Carolina
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
