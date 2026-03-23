@@ -8,6 +8,7 @@ parts:
       - file: background_tools/git_github
       - file: background_tools/markdown
       - file: background_tools/text_editors
+      - file: background_tools/unit_tests_tdd
 
   - caption: Agentic AI in Economics Research
     chapters:
